@@ -29,12 +29,12 @@
 <!-- Header On PC -->
 <div class="header-pc">
     <div class="card" id="main">
+        <button type="button" class="hidden" data-toggle="modal" id="dropdownMenuButton" data-target="#exampleModal"></button>
         <div id="mainTag">
             <img id="image" class="image" src="static/images/shadow.webp">
         </div>
         <div id="label" class="label">Portfolio</div>
     </div>
-    <button type="button" class="btn" data-toggle="modal" id="dropdownMenuButton" data-target="#exampleModal"></button>
 
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
          aria-hidden="true">
@@ -66,8 +66,8 @@
 <!-- Header On Mobile -->
 <div class="header-mobile">
     <div class="container">
-        <div class="label">Architecture</div>
-        <div class="label">Graphic Design</div>
+        <button class="btn">Architecture</button>
+        <button class="btn">Graphic Design</button>
         <a href="#" data-toggle="lightbox" data-gallery="gallery">
             <img src="static/images/logo/Architecture.jpg" class="img-fluid rounded">
         </a>
@@ -80,8 +80,8 @@
         <a href="#" data-toggle="lightbox" data-gallery="gallery">
             <img src="static/images/logo/Photography.jpg" class="img-fluid rounded">
         </a>
-        <div class="label">Industrial Design</div>
-        <div class="label">Photography</div>
+        <button class="btn">Industrial Design</button>
+        <button class="btn">Photography</button>
     </div>
 </div>
 </body>

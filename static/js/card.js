@@ -8,7 +8,7 @@ var x, y;
         }
         timeout = window.setTimeout(function () {
             $(event.target).trigger('mousemoveend');
-        }, 2);
+        }, 20);
     });
 }(jQuery));
 
