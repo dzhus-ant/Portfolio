@@ -28,7 +28,7 @@ $('document').ready(function () {
 
 $('.image').mouseout(function () {
     $(".image").attr("src", 'static/images/shadow.webp');
-    $(".label").attr("src", 'Portfolio');
+    $(".label").text('Portfolio');
 })
 
 $('.image').mousemoveend(function () {
@@ -38,22 +38,22 @@ $('.image').mousemoveend(function () {
 
     if (y < Height && x < WidthLeft && x < WidthRight) {
         $(".image").attr("src", 'static/images/upper_left.webp');
-        $(".label").attr("src", 'Industrial Desig');
+        $(".label").text('Industrial Desig');
     } else if (y < Height && x > WidthLeft && x > WidthRight) {
         $(".image").attr("src", 'static/images/upper_right.webp');
-        $(".label").attr("src", 'Architecture');
+        $(".label").text('Architecture');
     } else if (y > Height && x < WidthLeft && x < WidthRight) {
         $(".image").attr("src", 'static/images/lower_left.webp');
-        $(".label").attr("src", 'Graphic Design');
+        $(".label").text('Graphic Design');
     } else if (y > Height && x > WidthLeft && x > WidthRight) {
         $(".image").attr("src", 'static/images/lower_right.webp');
-        $(".label").attr("src", 'Photography');
+        $(".label").text('Photography');
     } else if (y > Height && x > WidthLeft && x < WidthRight) {
         $(".image").attr("src", 'static/images/all.webp');
-        $(".label").attr("src", 'Info');
+        $(".label").text('Info');
     } else {
         $(".image").attr("src", 'static/images/shadow.webp');
-        $(".label").attr("src", 'Portfolio');
+        $(".label").text('Portfolio');
     }
 })
 

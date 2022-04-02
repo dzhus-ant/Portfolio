@@ -60,6 +60,10 @@ body {
     color: white;
 }
 
+.btn:hover {
+    color: gray;
+}
+
 .a {
     display: flex;
     justify-content: center;
