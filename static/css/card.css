@@ -59,8 +59,7 @@ body {
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding: 2rem;
     box-sizing: border-box;
     justify-content: center;
     align-items: center;
@@ -76,7 +75,7 @@ body {
 }
 
 .image {
-    max-width: 100%;
+    max-width: 80%;
     border-radius: 15px;
 }
 
@@ -85,19 +84,19 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    grid-template-columns: 32vw 32vw;
-    grid-template-rows: 8vw;
+    grid-template-columns: 42vw 42vw;
+    grid-template-rows: 9vw;
 }
 
 .container {
-    font-size: 3vw;
+    font-size: 4vw;
     white-space: nowrap;
     text-align: center;
     color: white;
     display: grid;
-    grid-template-columns: 32vw 32vw;
-    grid-template-rows: 8vw 32vw 32vw 8vw;
-    gap: 0px 0px;
+    grid-template-columns: 42vw 42vw;
+    grid-template-rows: 9vw 42vw 42vw 9vw;
+    gap: 4vw 4vw;
     grid-auto-flow: row;
 }
 
@@ -109,22 +108,21 @@ body {
 }
 
 :root {
-    --card-width: 70vw;
-    --card-height: calc(var(--card-width) / 2);
+    --card-width: 80vw;
+    --card-height: calc(var(--card-width) / 3);
 }
 
 .card {
-    background: #191c29;
+    background: rgba(0, 0, 0, 0);
     border-radius: 25px;
     width: var(--card-width);
-    height: 20vw;
+    height: var(--card-height);
     position: relative;
     justify-content: center;
     align-items: center;
     text-align: center;
     display: flex;
     font-size: 1.5em;
-    color: rgb(88 199 250 / 0%);
     cursor: pointer;
     font-family: cursive;
 }
