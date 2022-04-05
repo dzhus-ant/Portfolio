@@ -8,7 +8,7 @@ var x, y;
         }
         timeout = window.setTimeout(function () {
             $(event.target).trigger('mousemoveend');
-        }, 20);
+        }, 12);
     });
 }(jQuery));
 
@@ -38,13 +38,13 @@ $('.image').mousemoveend(function () {
 
     if (y < Height && x < WidthLeft && x < WidthRight) {
         $(".image").attr("src", 'static/images/upper_left.webp');
-        $(".label").text('Industrial Desig');
+        $(".label").text('Architecture');
     } else if (y < Height && x > WidthLeft && x > WidthRight) {
         $(".image").attr("src", 'static/images/upper_right.webp');
-        $(".label").text('Architecture');
+        $(".label").text('Visual Arts');
     } else if (y > Height && x < WidthLeft && x < WidthRight) {
         $(".image").attr("src", 'static/images/lower_left.webp');
-        $(".label").text('Graphic Design');
+        $(".label").text('Industrial Design');
     } else if (y > Height && x > WidthLeft && x > WidthRight) {
         $(".image").attr("src", 'static/images/lower_right.webp');
         $(".label").text('Photography');
@@ -63,17 +63,17 @@ $('.image').click(function () {
     var WidthRight = image.clientWidth / 2 + image.clientWidth / 18;
 
     if (y < Height && x < WidthLeft && x < WidthRight) {
-        // Industrial Design
-        document.location.href = "#";
-    } else if (y < Height && x > WidthLeft && x > WidthRight) {
         // Architecture
-        document.location.href = "#";
+        document.location.href = "https://www.behance.net/DzhusArchitect";
+    } else if (y < Height && x > WidthLeft && x > WidthRight) {
+        // Visual Arts
+        document.location.href = "https://www.behance.net/DzhusArtist";
     } else if (y > Height && x < WidthLeft && x < WidthRight) {
-        // Graphic Design
-        document.location.href = "#";
+        // Industrial Design
+        document.location.href = "https://www.behance.net/DzhusDesigner";
     } else if (y > Height && x > WidthLeft && x > WidthRight) {
         // Photography
-        document.location.href = "#";
+        document.location.href = "https://www.behance.net/Dzhusphotographer";
     } else if (y > Height && x > WidthLeft && x < WidthRight) {
         // Contact
         document.getElementById('dropdownMenuButton').click();
