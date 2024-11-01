@@ -27,7 +27,7 @@ $('document').ready(function () {
 });
 
 $('.image').mouseout(function () {
-    $(".image").attr("src", 'static/images/shadow.webp');
+    $(".image").attr("src", 'static/images/shadow.jpg');
     $(".label").text('Portfolio');
 })
 
@@ -37,22 +37,22 @@ $('.image').mousemoveend(function () {
     var WidthRight = image.clientWidth / 2 + image.clientWidth / 18;
 
     if (y < Height && x < WidthLeft && x < WidthRight) {
-        $(".image").attr("src", 'static/images/upper_left.webp');
+        $(".image").attr("src", 'static/images/upper_left.jpg');
         $(".label").text('Architecture');
     } else if (y < Height && x > WidthLeft && x > WidthRight) {
-        $(".image").attr("src", 'static/images/upper_right.webp');
+        $(".image").attr("src", 'static/images/upper_right.jpg');
         $(".label").text('Visual Arts');
     } else if (y > Height && x < WidthLeft && x < WidthRight) {
-        $(".image").attr("src", 'static/images/lower_left.webp');
+        $(".image").attr("src", 'static/images/lower_left.jpg');
         $(".label").text('Industrial Design');
     } else if (y > Height && x > WidthLeft && x > WidthRight) {
-        $(".image").attr("src", 'static/images/lower_right.webp');
+        $(".image").attr("src", 'static/images/lower_right.jpg');
         $(".label").text('Photography');
     } else if (y > Height && x > WidthLeft && x < WidthRight) {
-        $(".image").attr("src", 'static/images/all.webp');
+        $(".image").attr("src", 'static/images/all.jpg');
         $(".label").text('Info');
     } else {
-        $(".image").attr("src", 'static/images/shadow.webp');
+        $(".image").attr("src", 'static/images/shadow.jpg');
         $(".label").text('Portfolio');
     }
 })
